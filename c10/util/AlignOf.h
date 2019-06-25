@@ -170,4 +170,10 @@ struct AlignedCharArrayUnion
           alignof(detail::AlignerImpl<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>),
           sizeof(::c10::detail::
                      SizerImpl<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>)> {};
+  
+//yhf possible usage:
+/*  
+AlignedCharArray<4, 10> my_align_array;
+AlignedCharArrayUnion<int, float> my_align_union;
+*/
 } // end namespace c10
